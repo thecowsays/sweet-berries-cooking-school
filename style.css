@@ -1,0 +1,9 @@
+:root {
+    background-color: #f5f3ef;
+    color: var(--color-text-one; )
+        /* VARS FOR THEME */
+        --color-text-one: #000;
+    --color-text-two: #646464;
+    --accent: #febd2f;
+    --outline: #dcdcdc;
+}
