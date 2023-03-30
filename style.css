@@ -3,14 +3,15 @@
     color: var(--color-text-one);
     font-family: Roboto, sans-serif;
 
-    /* VARS FOR THEME */
-    --color-text-one: #000;
-    --color-text-two: #646464;
+    /* -- VARS FOR THEME -- */
+    --color-one: #000;
+    --color-two: #646464;
     --accent: #febd2f;
     --outline: #dcdcdc;
 }
 
-/* BODY STYLE */
+/* -- BODY STYLE -- */
+
 h1,
 h2,
 h3 {
@@ -52,10 +53,16 @@ h3 {
     font-size: 16px;
 }
 
-/* LAYOUT STYLE */
-/* NAV BAR STUFF */
-nav {}
+img {
+    width: 100%;
+}
 
-.navWrapper {}
+/* -- LAYOUT STYLE -- */
+
+/* nav {} */
+
+.navWrapper {
+    display: flex;
+}
 
 .navItem {}
