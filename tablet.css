@@ -1,0 +1,4 @@
+/* TABLETS UP TO 1024PX LIKE IPAD PRO */
+.gridWrapper {
+    display: grid;
+}

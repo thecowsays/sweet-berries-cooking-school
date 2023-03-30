@@ -59,8 +59,37 @@ img {
 
 /* -- LAYOUT STYLE -- */
 
-/* nav {} */
+/* GRID */
 
-.navWrapper {}
+.gridWrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 100px 100px 50px;
+    grid-template-areas:
+        "header header header"
+        "mainContent mainContent mainContent"
+        "cardBox cardBox cardBox"
+        "footer footer footer";
+}
 
-.navItem {}
+.header {
+    background-color: red;
+
+
+}
+
+.mainContent {
+    background-color: green;
+}
+
+.cardBox {
+    background-color: blue;
+}
+
+.footer {
+    background-color: indigo;
+}
+
+/* CARD ITEMS */
+
+/* .cardItem {} */
