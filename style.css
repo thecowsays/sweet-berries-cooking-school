@@ -1,9 +1,61 @@
 :root {
     background-color: #f5f3ef;
-    color: var(--color-text-one; )
-        /* VARS FOR THEME */
-        --color-text-one: #000;
+    color: var(--color-text-one);
+    font-family: Roboto, sans-serif;
+
+    /* VARS FOR THEME */
+    --color-text-one: #000;
     --color-text-two: #646464;
     --accent: #febd2f;
     --outline: #dcdcdc;
 }
+
+/* BODY STYLE */
+h1,
+h2,
+h3 {
+    font-family: "Roboto Serif", serif;
+    font-weight: medium;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.p1 {
+    font-size: 24px;
+}
+
+.p2 {
+    font-size: 18px;
+}
+
+.button1,
+.button2 {
+    font-weight: medium;
+}
+
+.button1 {
+    font-size: 18px;
+}
+
+.button2 {
+    font-size: 16px;
+}
+
+/* LAYOUT STYLE */
+/* NAV BAR STUFF */
+nav {}
+
+.navWrapper {}
+
+.navItem {}
