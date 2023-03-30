@@ -61,8 +61,6 @@ img {
 
 /* nav {} */
 
-.navWrapper {
-    display: flex;
-}
+.navWrapper {}
 
 .navItem {}
