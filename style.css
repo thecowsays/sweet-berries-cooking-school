@@ -1,7 +1,7 @@
 :root {
     background-color: #f5f3ef;
     color: var(--color-text-one);
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
 
     /* -- VARS FOR THEME -- */
     --color-one: #000;
@@ -61,7 +61,7 @@ img {
 
 /* GRID */
 
-.gridWrapper {
+body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 25px 300px 300px 25px;
