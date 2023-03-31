@@ -64,7 +64,7 @@ img {
 .gridWrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 50px 100px 100px 50px;
+    grid-template-rows: 25px 300px 300px 25px;
     grid-template-areas:
         "header header header"
         "mainContent mainContent mainContent"
@@ -74,20 +74,22 @@ img {
 
 .header {
     background-color: red;
-
-
+    grid-area: header;
 }
 
 .mainContent {
     background-color: green;
+    grid-area: mainContent;
 }
 
 .cardBox {
     background-color: blue;
+    grid-area: cardBox;
 }
 
 .footer {
     background-color: indigo;
+    grid-area: footer;
 }
 
 /* CARD ITEMS */
