@@ -46,7 +46,18 @@ h3 {
 }
 
 .button1 {
+    border: 0;
+    border-radius: 32px;
+    background-color: #000;
+    color: #fff;
     font-size: 18px;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+.button1-reverse {
+    background-color: #fff;
+    color: #000;
 }
 
 .button2 {
@@ -61,6 +72,7 @@ img {
 
 /* 5 rows */
 .grid-container {
+    padding: 0 16px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
@@ -72,8 +84,25 @@ img {
 }
 
 .navBar {
-    background-color: red;
+    /* background-color: red; */
     grid-area: navBar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar ul li {
+    display: inline;
+    /* margin: 8px 16px;
+    padding: 8px 16px; */
+}
+
+.navBar a {
+    text-decoration: none;
+    color: var(--color-one);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .hero {
