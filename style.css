@@ -72,7 +72,7 @@ img {
 
 /* 5 rows */
 .grid-container {
-    padding: 0 16px;
+    margin: 0 48px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: 1fr 1fr;
@@ -89,6 +89,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 16px 0;
 }
 
 .navBar ul li {
@@ -111,11 +112,27 @@ img {
     font-weight: 700;
 }
 
+/* -- HERO LAYOUT -- */
 .hero {
-    background-color: orange;
+    /* background-color: orange; */
+    width: 100%;
     grid-area: hero;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
 }
 
+.hero-text {
+    /* background-color: violet; */
+    flex: 0 1 auto;
+}
+
+.hero-img {
+    flex: 1 0 50%;
+    align-self: center;
+}
+
+/* -- CARD LAYOUT -- */
 .card-container {
     background-color: yellow;
     grid-area: card-container;
