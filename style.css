@@ -63,35 +63,43 @@ img {
 
 body {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25px 300px 300px 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 20% auto 10%;
     grid-template-areas:
-        "header header header"
-        "mainContent mainContent mainContent"
-        "cardBox cardBox cardBox"
-        "footer footer footer";
+        "header header"
+        "hero hero"
+        "cardBox cardBox"
+        "footer footer";
 }
 
-.header {
+header {
     background-color: red;
     grid-area: header;
 }
 
-.mainContent {
+main {
     background-color: green;
-    grid-area: mainContent;
+    display: flex;
 }
 
-.cardBox {
+main div {
+    background-color: lime;
+    grid-area: hero;
+}
+
+section {
     background-color: blue;
     grid-area: cardBox;
 }
 
-.footer {
+footer {
     background-color: indigo;
     grid-area: footer;
 }
 
-/* CARD ITEMS */
+.cardItem {
+    max-width: 150px;
+    max-height: 150px;
+}
 
-/* .cardItem {} */
+/* .action {} */
