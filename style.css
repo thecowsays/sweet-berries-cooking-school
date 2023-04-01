@@ -2,7 +2,6 @@
     background-color: #f5f3ef;
     color: var(--color-text-one);
     font-family: "Roboto", sans-serif;
-
     /* -- VARS FOR THEME -- */
     --color-one: #000;
     --color-two: #646464;
@@ -54,47 +53,71 @@ h3 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 /* -- LAYOUT STYLE -- */
 
-/* GRID */
-
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 20% auto 10%;
+    grid-template-rows: 4% 46% 46% 4%;
     grid-template-areas:
         "header header"
-        "hero hero"
-        "cardBox cardBox"
+        "main main"
+        "section section"
         "footer footer";
 }
 
 header {
     background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     grid-area: header;
 }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLinks {}
 
 main {
     background-color: green;
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    grid-area: main;
 }
 
-main div {
+main div:nth-child(1) {
     background-color: lime;
-    grid-area: hero;
+    flex: 0 1 50%;
+}
+
+main div:nth-child(2) {
+    background-color: palegreen;
+    flex: 0 1 50%;
+}
+
+main div:nth-child(2) img {
+    width: 100%;
 }
 
 section {
     background-color: blue;
-    grid-area: cardBox;
+    grid-area: section;
 }
 
 footer {
     background-color: indigo;
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cardItem {
