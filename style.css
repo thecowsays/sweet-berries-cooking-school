@@ -1,5 +1,5 @@
 :root {
-    background-color: #f5f3ef;
+    background-color: #E5E5E5;
     color: var(--color-text-one);
     font-family: Roboto, sans-serif;
 
@@ -11,7 +11,6 @@
 }
 
 /* -- BODY STYLE -- */
-
 h1,
 h2,
 h3 {
@@ -32,6 +31,10 @@ h3 {
     font-weight: bold;
 }
 
+img {
+    width: 100%;
+}
+
 .p1 {
     font-size: 24px;
 }
@@ -46,21 +49,141 @@ h3 {
 }
 
 .button1 {
+    border: 0;
+    border-radius: 32px;
+    background-color: #000;
+    color: #fff;
     font-size: 18px;
+    text-align: center;
+    padding: 8px 16px;
 }
 
+.button1-reverse {
+    border: 1px solid var(--color-two);
+    border-radius: 32px;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 16px;
+}
+
+/* ^^^ */
+/* I THINK THIS WAS SUPPOSED TO BE WHAT I DID ABOVE */
 .button2 {
     font-size: 16px;
 }
 
-img {
-    width: 100%;
-}
-
 /* -- LAYOUT STYLE -- */
 
-/* nav {} */
+/* 5 rows */
+.grid-container {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "navBar navBar"
+        "hero hero"
+        "card-container card-container"
+        "footer footer";
+}
 
-.navWrapper {}
+.navBar {
+    /* background-color: red; */
+    grid-area: navBar;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 32px;
+}
 
-.navItem {}
+.navBar ul li {
+    display: inline;
+    /* margin: 8px 16px;
+    padding: 8px 16px; */
+}
+
+.navBar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navBar a {
+    text-decoration: none;
+    color: var(--color-one);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* -- HERO LAYOUT -- */
+.hero {
+    /* background-color: orange; */
+    margin: 0 32px;
+    width: 100%;
+    grid-area: hero;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+.hero-text {
+    /* background-color: violet; */
+    flex: 0 1 auto;
+}
+
+.hero-img {
+    flex: 1 0 50%;
+    align-self: center;
+}
+
+/* -- CARD LAYOUT -- */
+.card-container {
+    /* background-color: yellow; */
+    grid-area: card-container;
+    margin: 0 32px;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    flex: 0 0 auto;
+    border-radius: 32px;
+    width: 250px;
+    height: 250px;
+    padding: 32px;
+    margin: 16px;
+}
+
+/* CANT GET THIS TEXT TO LINE UP LIKE FIGMA */
+.card-accent {
+    background-color: var(--accent);
+}
+
+.card img {
+    width: 64px;
+    position: relative;
+    bottom: 60px;
+    float: right;
+    clear: right;
+}
+
+/* -- FOOTER LAYOUT -- */
+
+/* CAN'T GET RID OF THIN WHITE LINE AT BOTTOM ??? */
+.footer {
+    background-color: var(--accent);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.footer div {
+    flex: 0 0 auto;
+    align-self: center;
+}
